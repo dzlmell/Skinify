@@ -1,0 +1,248 @@
+/* =========================
+   RESET & FONT
+========================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #F8BBD9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links li a:hover {
+  color: #ec9fec;
+}
+.login-btn {
+  background-color: #ec9fec;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.login-btn:hover {
+  background-color: #F8BBD9;
+}
+
+/* =========================
+   CONTENT SECTIONS
+========================= */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+/* =========================
+   EXPERTS GRID
+========================= */
+.experts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.expert-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expert-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.expert-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #F8BBD9;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.expert-card h3 {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+  color: #ec9fec;
+}
+
+.expert-card p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.expert-card a {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #ec9fec;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.expert-card a:hover {
+  background-color: #d397d8;
+}
+
+/* =========================
+   HERO IMAGES (DETAIL PAGE)
+========================= */
+.hero-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   CONTACT DETAIL
+========================= */
+.expert-detail h1 {
+  font-size: 2em;
+  color: #ec9fec;
+  margin-bottom: 10px;
+}
+
+.expert-detail h3 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: #ec9fec;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.contact-info a:hover {
+  color: #FF6F3C;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #ec9fec;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #FF6F3C;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: #F8BBD9;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section-hero {
+    padding: 60px 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .hero-images {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 100px;
+    height: 100px;
+  }
+}
